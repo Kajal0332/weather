@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center; /* Horizontally centers the item */
+  align-items: center; /* Vertically centers the item */
+  min-height: 100vh; /* Ensures the body takes up the full viewport height */
+  background-image: url("img/beautiful-strawberry-garden-sunrise-doi-ang-khang-chiang-mai-thailand.jpg");
+  background-size:cover;
+}
+.contain {
+  width: 60%;
+  height: 90vh;
+  padding: 80px;
+  background-color: rgba(142, 142, 201, 0.329);
+  backdrop-filter: blur(5px);
+}
+.weather_details {
+    display: flex;
+    align-items: center;
+    gap: 10;
+    justify-content: center;
+} 
+.weather_icon_temp{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    /* height: 300px; */
+}
+.weather_icon_temp img{
+    width: 300px;
+    text-align: center;
+    /* height: 300px; */
+}
+
+.weather_temp{
+    font-size: 5rem;    
+}
+.weather_container {
+    margin: 5% 0 0 0;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  /* background-color: rgba(0, 255, 255, 0.226); */
+}
+
+.search_area {
+  padding: 10px 0 0 20px;
+  outline: none;
+  border: none;
+  color: black;
+  /* background-color: rgb(187, 154, 154); */
+  font-size: 1.1rem;
+  border-bottom: 2px;
+  width: 98%;
+  border-radius: 10px 0 0 10px;
+}
+form {
+  position: absolute;
+  top: 8%;
+  left: 24%;
+  display: flex;
+  /* border: 2px solid black; */
+  width: 52%;
+  /* margin: auto; */
+}
+nav form button {
+  background-color: white;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+.search_button {
+  border-radius: 0 10px 10px 0;
+  background-color: rgb(84, 97, 152);
+  color: white;
+  /* border-radius: 15px; */
+}
+.time_location p {
+  border: 2px solid white;
+  background-color: black;
+  width: 30%;
+  border-radius: 10px;
+}
+.hide {
+    display: none;
+}
+.not-found{
+    position: absolute;
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 20px;
+    color: red;
+    text-transform: bold;
+}
